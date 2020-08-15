@@ -1,13 +1,13 @@
 import cv2
 import numpy as np
 
-net = cv2.dnn.readNet('yolov3_training_last.weights', 'yolov3_testing.cfg')
+net = cv2.dnn.readNet('Models/yolov3_training_last.weights', 'Configs/yolov3_testing.cfg')
 
 classes = []
-with open("classes.txt", "r") as f:
+with open("Configs/classes.txt", "r") as f:
     classes = f.read().splitlines()
 
-cap = cv2.VideoCapture('test1.mp4')
+cap = cv2.VideoCapture('Test_Data/MP41080p20160313GOPR0850_4pm_Trim_40s-50s.mp4')
 font = cv2.FONT_HERSHEY_PLAIN
 colors = np.random.uniform(0, 255, size=(100, 3))
 

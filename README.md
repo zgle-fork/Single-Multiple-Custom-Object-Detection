@@ -1,3 +1,6 @@
+# zgle
+. activate py373-cv341-ds 
+
 # Youtube
 Python: Real-time Single & Multiple Custom Object Detection with Colab (GPU), Yolov3 and OpenCV
 1) Please access the folder - 1. Project - Custom Object Detection
